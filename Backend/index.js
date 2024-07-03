@@ -23,7 +23,6 @@ const corsObject = {
 // To parse incomming json request into javascript object
 app.use(express.json());
 
-
 // For API call form client               corsObject
 app.use(cors(corsObject));
 // Parse the cookie sent by client for authentication
@@ -111,7 +110,6 @@ const upload = multer({
   storage: storage
 })
 
-
 app.post('/create', verifyUser, upload.single('file'), (req, res)=>{
   PostModel.create({title: req.body.title,
      description: req.body.description,
@@ -167,12 +165,10 @@ app.delete('/deletepost/:id', (req, res)=>{
   .catch(err => res.json(err));
 })
 
-
   app.get('/logout', (req, res) =>{
     res.clearCookie('Token');
     return res.json('Success');
   })
-
 
 // Start the server
 const port = 3001;
