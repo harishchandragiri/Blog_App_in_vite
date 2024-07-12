@@ -17,7 +17,7 @@ useEffect(()=>{
 
   return (
     <div className='flex justify-center mx-5'>
-   <div>
+   <div className='mt-[55px] sm:mt-[75px]'>
    {
         posts.map(post => (
            // in react key is necessary during map to identify the each child in list

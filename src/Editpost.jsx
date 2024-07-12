@@ -40,7 +40,7 @@ function Editpost() {
 
   return (
     <div className='flex justify-center sm:mx-80 sm:px-20 my-1 py-5 px-10 rounded-md'>
-    <div>
+    <div className='mt-[55px] sm:mt-[75px]'>
       <form className='flex justify-center' onSubmit={handleSubmit}>
         <div className='flex flex-col sm:w-96 sm:px-[19px] px-1 w-60 bg-[#eada2edc] rounded-md'>
         <label htmlFor="" className='mx-3 font-bold'>Title:</label>

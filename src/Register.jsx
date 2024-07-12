@@ -17,7 +17,7 @@ export default function Register(){
     }
   return (
     <div className='flex justify-center'>
-        <div className='flex flex-col w-[400px] bg-[#e8e8a2] mt-16 m-10 border-2 rounded-[7px] p-[5px]'>
+        <div className='flex flex-col w-[400px] bg-[#e8e8a2] mt-[55px] sm:mt-[75px] m-10 border-2 rounded-[7px] p-[5px]'>
             <h3 className='flex justify-center underline rounded-[5px] px-32 m-1 my-2 font-bold'><span>Sign Up</span></h3>
             <form onSubmit={submitDetails}>
                 <div className='flex flex-col mx-2 justify-center'>
