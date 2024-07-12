@@ -10,6 +10,7 @@ import Create from './Create'
 import Contact from './Contact'
 import Post from './Post'
 import Editpost from './Editpost'
+import NotFound from './NotFound'
 
 export const userContext = createContext();
 
@@ -39,6 +40,7 @@ function App() {
       <Route path="/contact" element={<Contact/>}></Route>
       <Route path="/post/:id" element={<Post/>}></Route>
       <Route path="/editpost/:id" element={<Editpost/>}></Route>
+      <Route path="*" element={<NotFound />} />
     </Routes>
    </BrowserRouter>
   </userContext.Provider>

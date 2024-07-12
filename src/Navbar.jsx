@@ -22,7 +22,7 @@ function Navbar() {
   }
   
   return (
-    <div className='flex justify-between bg-[#ebdc3ddc]'>
+    <div className='flex justify-between h-[50px] sm:h-[70px] absolute  w-full bg-[#ebdc3ddc]'>
      <div><h1 className="text-xl md:text-3xl sm:text-2xl font-bold my-3 mx-5 md:mx-7 md:my-5 text-green-500">Blog</h1></div>
        <div>
         <ul className='flex justify-center'>
